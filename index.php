@@ -138,6 +138,35 @@
           </div>
         </div>
       </div>
+      <script type="text/javascript">
+window.onload = function () {
+
+var chart = new CanvasJS.Chart("chartContainer", {
+    theme: "light1", // "light2", "dark1", "dark2"
+    animationEnabled: false, // change to true      
+    title:{
+        text: "Best Destination"
+    },
+    data: [
+    {
+        // Change type to "bar", "area", "spline", "pie",etc.
+        type: "column",
+        dataPoints: [
+            { label: "Rinjani",  y: 10  },
+            { label: "Bromo", y: 15  },
+            { label: "Labuan Bajo", y: 25  },
+            { label: "Raja Ampat",  y: 30  },
+            { label: "Semeru",  y: 28  }
+        ]
+    }
+    ]
+});
+chart.render();
+
+}
+</script>
+<div id="chartContainer" style="height: 370px; width: 100%;"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"> </script>
 </body>
 
 </html>
