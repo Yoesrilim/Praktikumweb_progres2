@@ -28,13 +28,13 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
                 <li class="nav-item" data-toggle="tooltip" data-placement="right" title="BERANDA">
-                    <a class="nav-link" href="index.html">
+                    <a class="nav-link" href="index.php">
                         <i class="fa fa-home"></i>
                         <span class="nav-link-text">BERANDA</span>
                     </a>
                 </li>
                 <li class="nav-item" data-toggle="tooltip" data-placement="right" title="DESTINATION">
-                    <a class="nav-link" href="index.html">
+                    <a class="nav-link" href="Destination.php">
                         <i class="fa fa-globe"></i>
                         <span class="nav-link-text">DESTINATION</span>
                     </a>
@@ -79,6 +79,65 @@
             </ul>
         </div>
     </nav>
+    <div class="content-wrapper">
+    <div class="container-fluid">
+      <!-- Breadcrumbs-->
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="#">Dashboard</a>
+        </li>
+        <li class="breadcrumb-item active">My Dashboard</li>
+      </ol>
+      <!-- Icon Cards-->
+      <div class="col-lg-9">
+
+          <div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                <img src="img/bgpantai.jpg" width="1000" height="500">
+              </div>
+            </div>
+            </div>
+          </div>
+
+      <div class="row">
+        <div class="col-xl-3 col-sm-6 mb-3">
+          <div class="card text-white bg-primary o-hidden h-100">
+            <div class="card-body">
+              <div class="card-body-icon">
+              </div>
+              <center><img src="img/carlton.png" alt="Flowers in Chania" width="100" height="60"></center>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-sm-6 mb-3">
+          <div class="card text-white bg-warning o-hidden h-100">
+            <div class="card-body">
+              <div class="card-body-icon">
+              </div>
+              <center><img src="img/curtis.png" alt="Flowers in Chania" width="100" height="60"></center>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-sm-6 mb-3">
+          <div class="card text-white bg-success o-hidden h-100">
+            <div class="card-body">
+              <div class="card-body-icon">
+              </div>
+               <center><img src="img/four.png" alt="Flowers in Chania" width="100" height="60"></center>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-sm-6 mb-3">
+          <div class="card text-white bg-danger o-hidden h-100">
+            <div class="card-body">
+              <div class="card-body-icon">
+              </div>
+              <center><img src="img/W.png" alt="Flowers in Chania" width="100" height="60"></center>
+            </div>
+          </div>
+        </div>
+      </div>
 </body>
 
 </html>
