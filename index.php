@@ -41,25 +41,25 @@
                     </a>
                 </li>
                 <li class="nav-item" data-toggle="tooltip" data-placement="right" title="TYPE TRANSPORTASION">
-                    <a class="nav-link" href="index.html">
+                    <a class="nav-link" href="transportation.php">
                         <i class="fa fa-plane"></i>
                         <span class="nav-link-text">TYPE TRANSPORTASION</span>
                     </a>
                 </li>
                 <li class="nav-item" data-toggle="tooltip" data-placement="right" title="HOTEL">
-                    <a class="nav-link" href="index.html">
+                    <a class="nav-link" href="#">
                         <i class="fa fa-bed"></i>
                         <span class="nav-link-text">HOTEL</span>
                     </a>
                 </li>
                 <li class="nav-item" data-toggle="tooltip" data-placement="right" title="BOOKING">
-                    <a class="nav-link" href="index.html">
+                    <a class="nav-link" href="#">
                         <i class="fa fa-handshake-o"></i>
                         <span class="nav-link-text">BOOKING</span>
                     </a>
                 </li>
                 <li class="nav-item" data-toggle="tooltip" data-placement="right" title="TICKET">
-                    <a class="nav-link" href="index.html">
+                    <a class="nav-link" href="#">
                         <i class="fa fa-ticket"></i>
                         <span class="nav-link-text">TICKET</span>
                     </a>
