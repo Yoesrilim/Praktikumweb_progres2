@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 
@@ -65,7 +66,7 @@
                     </a>
                 </li>
                 <li class="nav-item" data-toggle="tooltip" data-placement="right" title="BOOKING CHECK">
-                    <a class="nav-link" href="select-booking.php">
+                    <a class="nav-link" href="index.html">
                         <i class="fa fa-tag"></i>
                         <span class="nav-link-text">BOOKING CHECK</span>
                     </a>
@@ -83,90 +84,54 @@
     <div class="content-wrapper">
     <div class="container-fluid">
       <!-- Breadcrumbs-->
-      <ul class="breadcrumb">
+      <ol class="breadcrumb">
         <li class="breadcrumb-item">
           <a href="#">Dashboard</a>
         </li>
         <li class="breadcrumb-item active">My Dashboard</li>
-      </ul>
-      <!-- Icon Cards-->
-      <div class="col-lg-9">
+      </ol>
+      
+      <!-- Card Columns Example Social Feed-->
+          <div class="mb-0 mt-4">
+              <hr class="my-0">
+              <?php
+  require 'koneksi.php';
 
-          <div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
-            <div class="carousel-inner" role="listbox">
-              <div class="carousel-item active">
-                <img src="img/bgpantai.jpg" width="1000" height="500">
-              </div>
-            </div>
-            </div>
-          </div>
+  $que = mysqli_query($koneksi, "SELECT * FROM data_pemesan");
 
-      <div class="row">
-        <div class="col-xl-3 col-sm-6 mb-3">
-          <div class="card text-white bg-primary o-hidden h-100">
-            <div class="card-body">
-              <div class="card-body-icon">
-              </div>
-              <center><img src="img/carlton.png" alt="Flowers in Chania" width="100" height="60"></center>
-            </div>
-          </div>
-        </div>
-        <div class="col-xl-3 col-sm-6 mb-3">
-          <div class="card text-white bg-warning o-hidden h-100">
-            <div class="card-body">
-              <div class="card-body-icon">
-              </div>
-              <center><img src="img/curtis.png" alt="Flowers in Chania" width="100" height="60"></center>
-            </div>
-          </div>
-        </div>
-        <div class="col-xl-3 col-sm-6 mb-3">
-          <div class="card text-white bg-success o-hidden h-100">
-            <div class="card-body">
-              <div class="card-body-icon">
-              </div>
-               <center><img src="img/four.png" alt="Flowers in Chania" width="100" height="60"></center>
-            </div>
-          </div>
-        </div>
-        <div class="col-xl-3 col-sm-6 mb-3">
-          <div class="card text-white bg-danger o-hidden h-100">
-            <div class="card-body">
-              <div class="card-body-icon">
-              </div>
-              <center><img src="img/W.png" alt="Flowers in Chania" width="100" height="60"></center>
-            </div>
-          </div>
-        </div>
-      </div>
-      <script type="text/javascript">
-window.onload = function () {
-
-var chart = new CanvasJS.Chart("chartContainer", {
-    theme: "light1", // "light2", "dark1", "dark2"
-    animationEnabled: false, // change to true      
-    title:{
-        text: "Best Destination"
-    },
-    data: [
-    {
-        // Change type to "bar", "area", "spline", "pie",etc.
-        type: "column",
-        dataPoints: [
-            { label: "Rinjani",  y: 10  },
-            { label: "Bromo", y: 15  },
-            { label: "Labuan Bajo", y: 25  },
-            { label: "Raja Ampat",  y: 30  },
-            { label: "Semeru",  y: 28  }
-        ]
+  if ($que) {
+    echo '<div class="table-responsive">';
+    echo '<table class="table table-hover">';
+    echo '<thead>';
+    echo '<tr>';
+    echo '<td>'."ID PEMESAN".'</td>';
+    echo '<td>'."NAMA PEMESAN".'</td>';
+    echo '<td>'."ALAMAT PEMESAN".'</td>';
+    echo '<td>'."NO. TELP. PEMESAN".'</td>';
+    echo '<td>'."DESTINATION".'</td>';
+    echo '<td>'."TRANSPORTATION".'</td>';
+    echo '<td>'."HOTEL".'</td>';
+    echo '</tr>';
+    echo '<thead>';
+    while ($row = mysqli_fetch_assoc($que)) {
+      echo '<tbody>';
+      echo '<tr>';
+      echo '<td>'.$row["id_pemesan"].'</td>';
+      echo '<td>'.$row["NamaPemesan"].'</td>';
+      echo '<td>'.$row["AlamatPemesan"].'</td>';
+      echo '<td>'.$row["NotelpPemesan"].'</td>';
+      echo '<td>'.$row["Destination"].'</td>';
+      echo '<td>'.$row["Transportation"].'</td>';
+      echo '<td>'.$row["Hotel"].'</td>';
+      echo '</tr>';
+      echo '</tbody>';
     }
-    ]
-});
-chart.render();
-
-}
-</script>
-<div id="chartContainer" style="height: 370px; width: 100%;"></div>
-<script src="https://canvasjs.com/assets/script/canvasjs.min.js"> </script>
+    echo '</table>';
+    echo '</div>';
+    }
+  
+?>
+            </div>
+          </div>
 </body>
 </html>
